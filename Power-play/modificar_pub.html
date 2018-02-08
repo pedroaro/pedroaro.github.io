@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<script src="./js/fontawesome.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<!--fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Amaranth|Poppins" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		<!--fonts end-->
+		<title> PowerPlay | El poder de los Videojuegos </title>
+		<link rel="icon" href="./img/icono.png" type="image/png" size="16x16">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+	    <!--Función para rotar los carets en los dropdowns-->
+		<script>
+		  $(function(){
+		    $(".dropdown").on("show.bs.dropdown hide.bs.dropdown", function(){
+		      $(this).find(".glyphicon-menu-down").toggleClass("caretup");
+		    });
+		  });
+		</script>
+	</head>
+	<body  onload="completar()">
+		<!-- Header -->
+		<div class="container">
+			<!-- Imagen -->
+			<div class="row">
+				<center>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
+					<img id="banner" src="./img/header.jpg">
+				</div>	
+				</center>
+			</div>
+			<!-- Fin Imagen -->
+						<!-- Menu -->
+			<div class="row">
+				<center>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
+					<nav class="navbar navbar-inverse bar ff-poppins" data-spy="affix" data-offset-top="197">
+					  <div class="container-fluid">
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				            <span class="sr-only">Toggle navigation</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				          </button>
+					      <a class="navbar-brand barBoton" href="index.html">PowerPlay</a>
+					    </div>
+					    <div id="navbar" class="navbar-collapse collapse">
+						    <ul class="nav navbar-nav">
+						      <li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
+						      <li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
+						      <li><a class="barBoton resaltar" href="populares_auth.html" id="populares">Populares</a></li>
+						      <li class="dropdown">
+						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+						        <ul class="dropdown-menu bar">
+						          <li><a class="sobre" href="ps4_auth.html">PS4</a></li>
+						          <li><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
+						          <li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
+						        </ul>
+						      </li>
+						      <li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
+						    </ul>
+					        <ul class="nav navbar-nav navbar-right">
+					      	  <li class="dropdown inset active barBoton resaltar">
+						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
+						        <ul class="dropdown-menu bar perfilMenu">
+						        	<li>
+			                            <div class="navbar-login">
+			                                <div class="row">
+			                                    <div class="col-lg-12">
+			                                        <p class="text-center">
+			                                            <img src="img/Profilepics/raineb.jpg" class="userImage2" alt="Avatar">
+			                                        </p>
+			                                    </div>
+			                                    <div class="col-lg-12">
+			                                        <p class="text-left"><strong>Raquel Escalante</strong></p>
+			                                        <p class="text-left small">raquel@email.com</p>
+			                                        <p class="text-left">
+			                                            <a href="perfil.html" class="btn btn-primary btn-block btn-sm">Editar Perfil</a>
+			                                            <a href="admin_pub.html" class="btn btn-primary btn-block btn-sm">Mis Publicaciones</a>
+			                                        </p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </li>
+			                        <li class="divider"></li>
+			                        <li>
+			                            <div class="navbar-login navbar-login-session">
+			                                <div class="row">
+			                                    <div class="col-lg-12">
+			                                        <p>
+			                                            <a href="index.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
+			                                        </p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </li>
+						        </ul>
+						      </li>
+						    </ul>
+						</div>
+					  </div>
+					</nav>
+				</div>	
+				</center>
+			</div>
+			<!-- Fin Menu -->
+		</div>
+		<!-- Fin Header -->
+		<!-- Modal -->
+		<div id="myModal" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Registro</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div id="i1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 izq">
+		      			<input type="text" name="nombre" placeholder="Nombre de Usuario">
+		      		</div>
+		      		<div id="d1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 der">
+		      			<input type="text" name="fecha" onfocus="(this.type='date')" placeholder="Fecha de Nacimiento">
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div  id="i2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 izq">
+		      			<input type="password" name="Contrasena" placeholder="Contraseña">
+		      		</div>
+		      		<div  id="d2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 der">
+		      			<input type="password" name="Contrasena2" placeholder="Confirmar Contraseña">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Registrar</button></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+
+		<div id="myModal2" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog modal-sm">
+		    <!-- Modal content-->
+		    <div class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Iniciar Sesión</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="password" name="Contrasena" placeholder="Contraseña">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+		<!-- Fin Modal -->
+		<!-- Body Inicio -->
+		<div class="container body">
+			<div class="row">
+				<center>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tituloContacto ff-amaranth">
+					<h2>Modificar Publicación</h2>
+				</div>
+				</center>
+			</div>
+			<div class="row">
+				<div class="crear-pub-container">							
+					<div class="row">
+						<label for="pub_title" class="ff-amaranth fs-big">Título de la publicación:</label>
+						<input type="text" name="pub_title" id="pub_title" class="ff-poppins" placeholder="Escribe el título aquí" value="Cuphead ya supera los 2 millones de unidades vendidas" />
+						<br>
+						<br>
+						<div id="summernote">
+							<p>2017 ha sido un año de grandes exclusivos. Si Sony ha tenido Horizon Zero Dawn y Nintendo ha tenido The Legend of Zelda Breath of the Wild y Super Mario Odyssey como grandes destacados en este campo, Microsoft ha hecho lo propio con Cuphead. El título de plataformas y acción ha sido todo un éxito y tanto la crítica como los usuarios lo han acogido con los brazos abiertos y entusiasmo. Tanto es así que Cuphead ya ha superado los 2 millones de unidades vendidas.</p>
+							<img src="https://assets.pcmag.com/media/images/470358-cuphead-for-pc.jpg?width=1350&height=759" class="pub-inner-img-container">
+							<p>Así lo ha hecho saber Studio MDHR, máximos responsables del juego, a través de la página web oficial de Cuphead, donde ha emitido un comunicado para celebrar los 2 millones de copias de Cuphead vendidas. "Ni en nuestros sueños más descabellados pensamos que nuestros locos personajes serían aceptados por tantos admiradores de todo el mundo y nos sentimos honrados continuamente", expresaba Studios MDHR en su comunicado.</p>
+							<p>Y es que, no hay duda de que Cuphead es uno de los mejores juegos de acción y aventuras de 2017. Su mezcla de plataformas y acción, acompañada de ese estilo visual al más puro estilo de los dibujos animados de los años 30 y de su elevada dificultad ha situado al título de PC y Xbox One como uno de los más destacados del momento.ETIQUETAS: retro, dreamcast, sega, análisis, retro</p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<h4 class="ff-amaranth">Imagen destacada de la publicación:</h4>
+							<button type="button" class="btn admin-btn ff-poppins center-block" style="width: 100%; margin-top: 20px;">Click aquí para subir la imagen</button>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<h4 class="ff-amaranth">Etiquetas:</h4>
+							<input type="text" name="pub_title" id="pub_title" class="ff-poppins" placeholder="Etiquetas" value="Cuphead, PC, Estilo Retro, Mouse" />
+							<h4 class="ff-amaranth">Categorías:</h4>
+							<input type="text" name="pub_title" id="pub_title" class="ff-poppins" placeholder="Categorías" value="Análisis, XBOX" />
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block">
+							<button onclick="location.href = 'admin_pub.html';" type="button" class="btn admin-btn ff-poppins center-block">Modificar Publicación</button>
+					</div>						
+					</div>
+				</div>					
+			</div>
+		</div>	
+		<!-- Fin Body -->
+		
+		<!-- Footer Inicio -->
+		<div class="container  body">
+			<div class="row footer">
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 ff-lato">
+					Powerplay &copy; 2017<br>Carlos Julio Iglesias Monsalve<br>Pedro Alejandro Rodriguez Orellana<br>Raquel Jeleitza Escalante Salazar<br>Satoru Diaz Nakada<br>Todos los derechos reservados.
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<i class="fa fa-facebook-square fa-2x pull-right" aria-hidden="true"></i>
+					<i class="fa fa-twitter-square fa-2x pull-right" aria-hidden="true"></i>
+					<i class="fa fa-instagram fa-2x pull-right" aria-hidden="true"></i>
+					<i class="fa fa-youtube-play fa-2x pull-right" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<!-- Fin Footer -->
+		<script type="text/javascript" src="js/textfield_pub.js"></script>
+	</body>
+</html>

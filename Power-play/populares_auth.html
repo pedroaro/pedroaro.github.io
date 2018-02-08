@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<script src="./js/fontawesome.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<!--fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Amaranth|Poppins" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		<!--fonts end-->
+		<title> PowerPlay | El poder de los Videojuegos </title>
+		<link rel="icon" href="./img/icono.png" type="image/png" size="16x16">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+	    <script type="text/javascript" src="./js/backend.js"></script>
+	    <!--Función para rotar los carets en los dropdowns-->
+	    <script>
+		  $(function(){
+		    $(".dropdown").on("show.bs.dropdown hide.bs.dropdown", function(){
+		      $(this).find(".glyphicon-menu-down").toggleClass("caretup");
+		    });
+		  });
+		</script>
+	</head>
+	<body>
+		<!-- Header -->
+		<div class="container">
+			<!-- Imagen -->
+			<div class="row">
+				<center>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
+					<img id="banner" src="./img/header.jpg">
+				</div>	
+				</center>
+			</div>
+			<!-- Fin Imagen -->
+			<!-- Menu -->
+			<div class="row">
+				<center>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
+					<nav class="navbar navbar-inverse bar ff-poppins" data-spy="affix" data-offset-top="197">
+					  <div class="container-fluid">
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				            <span class="sr-only">Toggle navigation</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				          </button>
+					      <a class="navbar-brand barBoton" href="index_auth.html">PowerPlay</a>
+					    </div>
+					    <div id="navbar" class="navbar-collapse collapse">
+						    <ul class="nav navbar-nav">
+						      <li><a class="barBoton resaltar" href="index_auth.html" id="inicio">Inicio</a></li>
+						      <li><a class="barBoton resaltar" href="analisis_auth.html" id="analisis">Análisis</a></li>
+						      <li class="active barBoton resaltar"><a href="#" id="populares">Populares</a></li>
+						      <li class="dropdown">
+						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="glyphicon glyphicon-menu-down"></span></a>
+						        <ul class="dropdown-menu bar">
+						          <li><a class="sobre" href="ps4_auth.html">PS4</a></li>
+						          <li><a class="sobre" href="xbox_auth.html">XBOX ONE</a></li>
+						          <li><a class="sobre" href="switch_auth.html">NINTENDO SWITCH</a></li>
+						        </ul>
+						      </li>
+						      <li><a class="barBoton resaltar" href="contacto_auth.html" id="contacto">Contacto</a></li>
+						    </ul>
+					        <ul class="nav navbar-nav navbar-right">
+					      	  <li class="dropdown inset">
+						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="NombreUsario"><img src="img/Profilepics/raineb.jpg" class="userImage" alt="Avatar"> &nbsp; RAINEB &nbsp; <span class="	glyphicon glyphicon-menu-down"></span></a>
+						        <ul class="dropdown-menu bar perfilMenu">
+						        	<li>
+			                            <div class="navbar-login">
+			                                <div class="row">
+			                                    <div class="col-lg-12">
+			                                        <p class="text-center">
+			                                            <img src="img/Profilepics/raineb.jpg" class="userImage2" alt="Avatar">
+			                                        </p>
+			                                    </div>
+			                                    <div class="col-lg-12">
+			                                        <p class="text-left"><strong>Raquel Escalante</strong></p>
+			                                        <p class="text-left small">raquel@email.com</p>
+			                                        <p class="text-left">
+			                                            <a href="perfil.html" class="btn btn-primary btn-block btn-sm">Editar Perfil</a>
+			                                            <a href="admin_pub.html" class="btn btn-primary btn-block btn-sm">Mis Publicaciones</a>
+			                                        </p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </li>
+			                        <li class="divider"></li>
+			                        <li>
+			                            <div class="navbar-login navbar-login-session">
+			                                <div class="row">
+			                                    <div class="col-lg-12">
+			                                        <p>
+			                                            <a href="populares.html" class="btn btn-danger btn-block">Cerrar Sesion</a>
+			                                        </p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </li>
+						        </ul>
+						      </li>
+						    </ul>
+						</div>
+					  </div>
+					</nav>
+				</div>	
+				</center>
+			</div>
+			<!-- Fin Menu -->
+		</div>
+		<!-- Fin Header -->
+		<!-- Modal -->
+		<div id="myModal" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Registro</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div id="i1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 izq">
+		      			<input type="text" name="nombre" placeholder="Nombre de Usuario">
+		      		</div>
+		      		<div id="d1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 der">
+		      			<input type="text" name="fecha" onfocus="(this.type='date')" placeholder="Fecha de Nacimiento">
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div  id="i2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 izq">
+		      			<input type="password" name="Contrasena" placeholder="Contraseña">
+		      		</div>
+		      		<div  id="d2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 der">
+		      			<input type="password" name="Contrasena2" placeholder="Confirmar Contraseña">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Registrar</button></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+
+		<div id="myModal2" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog modal-sm">
+		    <!-- Modal content-->
+		    <div class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Iniciar Sesión</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="password" name="Contrasena" placeholder="Contraseña">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		        		<center><button type="button" onclick="location.href = 'populares_auth.html';" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+		<!-- Fin Modal -->
+		<!-- Body Inicio -->
+		<div class="container  body">
+			<div class="row">
+				<center>
+				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 topPad">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<center> <h1 class="ff-amaranth"> Los Post Más Populares </h1></center>
+							<br>
+						</div>
+					</div>
+					<!-- Noticias -->
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="grid" id="auth_switch2">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+												<img id="banner" src="./img/labo.jpg">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
+												<h3 class="ff-amaranth">Te contamos qué tan fácil es jugar con los cartones de Nintendo Labo</h3>
+												<p class="ff-poppins">El mes pasado, Nintendo nos sorprendió con el anuncio de lo que podrían ser algunos de los productos más extraños que haya producido. Nintendo Labo, una plataforma educativa para el Nintendo Switch que permite construir piezas funcionales de cartón.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div  class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="grid" id="auth_xbox_one">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+												<img id="banner" src="./img/xbox.jpg">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
+												<h3 class="ff-amaranth">Xbox One X aumentó los ingresos de la división de gaming de Microsoft</h3>
+												<p class="ff-poppins">Xbox LIVE tiene 59 millones de usuarios activos al mes.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div  class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="grid" id="auth_switch1">	
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<img id="banner" src="./img/arms.jpg" style="margin-bottom: 10px;">
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noticias">
+												<b class="ff-amaranth">Que el planteamiento de ARMS no los lleve al engaño... porque les puede dar un puñetazo en las costillas.</b>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div  class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="grid" style="padding-bottom: 20px;"  id="auth_ps4_GOW">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<img id="banner" src="./img/GOWcuadrado.jpg">
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 noticias">
+												<b class="ff-amaranth">God of War, para PS4, se deja ver en unos nuevos y geniales artworks</b>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div  class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="grid" id="auth_switch3">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+												<img id="banner" src="./img/fifa.jpg">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noticias">
+												<h3 class="ff-amaranth">Diferencias de FIFA 18 en Nintendo Switch con las versiones de PS4, Xbox One y PC</h3>
+												<p class="ff-poppins">FIFA 18 ha llegado a nuestras vidas con las versiones de toda la vida para PS4, Xbox One y PC, pero también lo ha hecho acompañada por una versión para Nintendo Switch muy resultona, conocela</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Fin Noticias -->
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="videoBar">
+						<div class="row">
+						  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						  <h2 id="videos" style="color: #630000;" class="ff-amaranth">Buscar Publicación</h2>
+						  	<div class="input-group">
+						      <input type="text" placeholder="Titulo..." style="margin-top: 0px; height: 40px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+						      <span class="input-group-btn">
+						        <button class="btn btn-secondary modalBoton" type="button" style="height: 40px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><span class="glyphicon glyphicon-search"></span></button>
+						      </span>
+						    </div>
+						  </div>
+						</div>
+						<h2 id="videos" style="color: #630000;" class="ff-amaranth">¿Todavia no los juegas?</h2>
+						<br>
+						<b class="ff-poppins">Rise Of The Tomb Raider</b>
+						<iframe src="https://www.youtube.com/embed/mRm78Oz6Phs"> </iframe>
+						<br>
+						<br>
+						<b class="ff-poppins">Halo 5</b>
+						<iframe src="https://www.youtube.com/embed/Rh_NXwqFvHc"> </iframe>
+						<br>
+						<br>
+						<b class="ff-poppins">Skyrim</b>
+						<iframe src="https://www.youtube.com/embed/JSRtYpNRoN0"> </iframe>
+						<br>
+						<br>
+						<b class="ff-poppins">Overwatch</b>
+						<iframe src="https://www.youtube.com/embed/oSbhjlJ_Ou4"> </iframe>
+						<br>
+					</div>
+				</div>	
+				</center>
+			</div>
+		</div>
+		<!-- Fin Body -->
+		<!-- Footer Inicio -->
+		<div class="container  body">
+			<div class="row footer">
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 ff-lato">
+					Powerplay &copy; 2017<br>Carlos Julio Iglesias Monsalve<br>Pedro Alejandro Rodriguez Orellana<br>Raquel Jeleitza Escalante Salazar<br>Satoru Diaz Nakada<br>Todos los derechos reservados.
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<i class="fa fa-facebook-square fa-2x pull-right" aria-hidden="true"></i>
+					<i class="fa fa-twitter-square fa-2x pull-right" aria-hidden="true"></i>
+					<i class="fa fa-instagram fa-2x pull-right" aria-hidden="true"></i>
+					<i class="fa fa-youtube-play fa-2x pull-right" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<!-- Fin Footer -->
+	</body>
+</html>

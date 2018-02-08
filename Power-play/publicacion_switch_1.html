@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<script src="./js/fontawesome.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<!--fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Amaranth|Poppins" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		<!--fonts end-->
+		<title> PowerPlay | El poder de los Videojuegos </title>
+		<link rel="icon" href="./img/icono.png" type="image/png" size="16x16">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+	    <script type="text/javascript" src="./js/datos.json"></script>
+	    <script type="text/javascript" src="./js/config.json"></script>
+	    <script type="text/javascript" src="./js/backend.js"></script>
+	    <script src="./js/bootstrap-rating-input.min.js" type="text/javascript"></script>
+	    <!--Función para rotar los carets en los dropdowns-->
+	    <script>
+		  $(function(){
+		    $(".dropdown").on("show.bs.dropdown hide.bs.dropdown", function(){
+		      $(this).find(".glyphicon-menu-down").toggleClass("caretup");
+		    });
+		  });
+		</script>
+	</head>
+	<body  onload="completar()">
+		<!-- Header -->
+		<div class="container">
+			<!-- Imagen -->
+			<div class="row">
+				<center>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
+					<img id="banner" src="./img/header.jpg">
+				</div>	
+				</center>
+			</div>
+			<!-- Fin Imagen -->
+			<!-- Menu -->
+			<div class="row">
+				<center>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
+					<nav class="navbar navbar-inverse bar ff-poppins" data-spy="affix" data-offset-top="197">
+					  <div class="container-fluid">
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				            <span class="sr-only">Toggle navigation</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				          </button>
+					      <a class="navbar-brand barBoton" href="index.html">PowerPlay</a>
+					    </div>
+					    <div id="navbar" class="navbar-collapse collapse">
+						    <ul class="nav navbar-nav">
+						      <li><a class="barBoton resaltar" href="index.html" href="#" id="inicio">Inicio</a></li>
+						      <li><a class="barBoton resaltar" href="analisis.html" id="analisis">Análisis</a></li>
+						      <li><a class="barBoton resaltar" href="populares.html" id="populares">Populares</a></li>
+						      <li class="dropdown">
+						        <a class="dropdown-toggle  barBoton resaltar" data-toggle="dropdown" href="#" id="consolas">Consolas &nbsp;<span class="	glyphicon glyphicon-menu-down"></span></a>
+						        <ul class="dropdown-menu bar">
+						          <li><a class="sobre" href="ps4.html">PS4</a></li>
+						          <li><a class="sobre" href="xbox.html">XBOX ONE</a></li>
+						          <li><a class="sobre" href="switch.html">NINTENDO SWITCH</a></li>
+						        </ul>
+						      </li>
+						      <li><a class="barBoton resaltar" href="contacto.html" id="contacto">Contacto</a></li>
+						    </ul>
+					        <ul class="nav navbar-nav navbar-right">
+					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal" id="registrar">Registrar</a></li>
+					      	  <li><a class="barBoton right resaltar" href="#" data-toggle="modal" data-target="#myModal2" id="inicioS">Iniciar Sesión</a></li>
+						    </ul>
+						</div>
+					  </div>
+					</nav>
+				</div>	
+				</center>
+			</div>
+			<!-- Fin Menu -->
+		</div>
+		<!-- Fin Header -->
+		<!-- Modal -->
+		<div id="myModal" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Registro</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div id="i1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 izq">
+		      			<input type="text" name="nombre" placeholder="Nombre de Usuario">
+		      		</div>
+		      		<div id="d1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 der">
+		      			<input type="text" name="fecha" onfocus="(this.type='date')" placeholder="Fecha de Nacimiento">
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div  id="i2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 izq">
+		      			<input type="password" name="Contrasena" placeholder="Contraseña">
+		      		</div>
+		      		<div  id="d2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 der">
+		      			<input type="password" name="Contrasena2" placeholder="Confirmar Contraseña">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Registrar</button></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+
+		<div id="myModal2" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog modal-sm">
+		    <!-- Modal content-->
+		    <div id="inicio" class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Iniciar Sesión</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="password" name="Contrasena" placeholder="Contraseña">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		        		<center><button onclick="location.href = 'publicacion_switch_1_auth.html';" type="button" class="btn modalBoton" data-dismiss="modal">Iniciar Sesión</button></center>
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<br>
+		        		<center><a data-toggle="modal" data-target="#myModal3" data-dismiss="modal">¿Olvido su Contraseña?</a></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="myModal3" class="modal fade ff-poppins" role="dialog">
+		  <div class="modal-dialog modal-sm">
+		    <!-- Modal content-->
+		    <div id="recuperar" class="modal-content mod">
+		      <div class="modal-header"  style="border: none; padding-top: 5%; padding-bottom: 1%;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <center><strong><h4 class="modal-title">Enviar Contraseña</h4></strong></center>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+		      		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      			<input type="email" name="email" placeholder="Correo">
+		      		</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer" style="border: none;">
+		      	<div class="row">
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button"  data-toggle="modal" data-target="#myModal2" class="btn modalBoton" data-dismiss="modal">Volver</button></center>
+		      		</div>
+		      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+		        		<center><button type="button" class="btn modalBoton" data-dismiss="modal">Enviar</button></center>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+		<!-- Fin Modal -->
+		<!-- Body Inicio -->
+		<div class="container  body">
+			<div class="row">
+				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 topPad">
+					<div class="publicacion">
+						<center>
+							<div class="pub-title-container">
+								<h1 class="ff-amaranth ft-upper">Análisis de ARMS el juego de lucha exclusivo para Nintendo Switch</h1>
+								<h4 class="ff-poppins fs-small">Publicado el 05/01/18 | Autor: <a href="#">Carlosjj</a> | Categoría: <a href="populares.html">Populares</a>, <a href="switch.html">Switch</a></h4>
+							</div>
+						</center>
+						<img src="img/arms1.jpg" class="pub-img-container">
+						<div class="pub-container ff-poppins">
+							<p>A Nintendo se le dan bien los juegos de boxeo. Desde que apareció Mike Tyson´s Punch Out en NES hace treinta años, hemos jugado a distintas versiones de este deporte: Super Punch Out en Super Nintendo, el minijuego de Wii Sports y un nuevo Punch Out para Wii... Todas de ellas igual de divertidas, pero ninguna tan espectacular como ARMS.</p>
+							<p>Que el planteamiento de ARMS no os lleve a engaño... porque os podéis llevar un puñetazo en las costillas. El primer gran juego desarrollado por Nintendo en exclusiva para Switch (Zelda o Mario Kart 8 salieron también para Wii U, y 1-2 Switch era menos ambicioso) oculta mucho más de lo que parece. ¿Es un juego de puñetazos? Por supuesto. ¿Tiene el estilo colorido y el tono amable de los juegos de Nintendo? Claro que sí. Pero su diseño encierra un juego competitivo destinado a convertirse en el próximo fenómeno online, como Mario Kart 8 Deluxe, Super Smash Bros o Splatoon.</p>
+							<p>Si a estas alturas todavía no habéis oído hablar de ARMS, tenéis un serio problema. Imaginad un campeonato de boxeo, al que acudiesen púgiles de todo el mundo, con una característica muy especial: sus brazos son como muelles, que se pueden estirar varios metros. Aparte de esto, Switch recibe un juego perfectamente equilibrado: fácil de jugar e imposible de dominar, que se basa en el equilibrio de tres elementos: los puños que hayamos equipado, nuestra habilidad para esquivar y el "timing" para realizar ataques más potentes.</p>
+							<img src="img/arms2.jpg" class="pub-inner-img-container">
+							<p>Lo primero que debemos hacer al entrar en este torneo es escoger un personaje, entre diez disponibles. Cada uno de ellos tiene un diseño y características muy especiales (y después de dedicarle muchas horas al juego, podemos decir que están muy bien compensados). Tenemos los rápidos, como Min Min o Ninjara -capaz de desaparecer- y los fuertes y más lentos, como Master Mummy o Mechanica. Pero para empezar, lo más recomendable sea optar por alguien equilibrado como Springman o Ribbongirl. Lo que les diferencia no sólo es la rapidez y la fuerza, sino que cada uno de ellos cuenta con tres tipos de puño que determinan sus ataques. </p>
+							<p>Además de los guantes "normales", que son fáciles de controlar, tenemos proyectiles que se separan, rastreadores, boomerangs o enormes martillos. Y lo bueno es que podemos equipar uno diferente en cada brazo. Después sólo queda saltar al ring y machacar a quienes se nos pongan por delante, con un uso sencillo del control.</p>
+							<p>Podemos ejecutar un golpe con cada brazo, agarrar, deslizarnos y lanzar el ataque especial. Cada uno de los golpes se puede contrarrestar con un sistema de "piedra, papel o tijera" que dinamiza bastante los encuentros. </p>
+							<p>La principal virtud del juego está en que con este abanico bastante limitado de ataques -y un catálogo de luchadores que se queda corto ante otros títulos del género- es tremendamente estratégico. Tenemos que jugar con la distancia, el uso de cada puño, y la posición dentro del ring. No gana el jugador que lance más ataques, sino el que sepa "volar como una mariposa y picar como una avispa".</p>
+							<p>Los escenarios, sin ser un prodigio del diseño, también aportan condiciones especiales al combate. En algunos casos, basta con moverse a diferentes alturas, pero en otros aparecen elementos destructibles, bloques que aparecen del suelo, plataformas deslizantes o camas elásticas, que influyen bastante en la pelea.</p>
+							<div class="tag-container">
+								<h2 class="ff-amaranth ft-upper">Etiquetas:</h2>
+								<h5 class="ff-poppins"><a href="#">Nintendo</a>, <a href="#">Portatil</a>, <a href="#">Arms</a></h5>
+								<div class="row rating-share ff-poppins">
+									<div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
+										Comparte en Redes Sociales:
+										<br>
+										<a href="http://www.facebook.com"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+										<a href="http://www.twitter.com"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+										<a href="http://reddit.com"><i class="fa fa-reddit-square fa-2x" aria-hidden="true"></i></a>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-8 col-xs-8">
+										Califica esta entrada: <input type="number" name="pub-rating" id="pub-rating" class="rating"/>
+									</div>									
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="author-container">
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+									<img class="img-responsive" src="img/Profilepics/carlosjj.jpg">
+								</div>
+								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+									<h2 class="ff-amaranth ft-upper"><a href="#">Carlosjj</a></h2>
+									<p class="ff-poppins">Amante de los videojuegos y fan de playstation. Amo jugar tomb raider y uncharted cuando no estoy escribiendo en el blog o estudiando computación. Creo que los teléfonos móviles también sirven para jugar aunque solo eventualmente.</p>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="pub-comment-container">
+							<div class="row">
+								<h1 class="ff-amaranth ft-upper" style="padding-bottom: 2%">Comentarios</h1>
+								<div class="comment-container">
+									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+										<img class="img-responsive img-round" src="img/Profilepics/satonakada.jpg">
+									</div>
+									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+										<h3 class="ff-amaranth"><a href="#">SatoNakada</a></h3>
+										<p class="ff-poppins">Es un juego muy entretenido, lo recomiendo!</p>
+										<hr>
+									</div>
+								</div>
+							</div>						
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-10 col-xs-10 center-block">
+				      			<button type="button" class="btn contactoBoton ff-poppins center-block" data-toggle="modal" data-target="#myModal2">Iniciar sesión para comentar</button>
+				      		</div>
+			      		</div>
+					</div>					
+				</div>
+				<!-- Fin publicación -->
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<center>
+						<div class="videoBar">
+						<div class="row">
+						  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						  <h2 id="videos" style="color: #630000;" class="ff-amaranth">Buscar Publicación</h2>
+						  	<div class="input-group">
+						      <input type="text" placeholder="Titulo..." style="margin-top: 0px; height: 40px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+						      <span class="input-group-btn">
+						        <button class="btn btn-secondary modalBoton" type="button" style="height: 40px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;"><span class="glyphicon glyphicon-search"></span></button>
+						      </span>
+						    </div>
+						  </div>
+						</div>
+							<h2 id="videos" style="color: #630000;" class="ff-amaranth">¿Todavía no los juegas?</h2>
+							<br>
+							<b class="ff-poppins">Rise Of The Tomb Raider</b>
+							<iframe src="https://www.youtube.com/embed/mRm78Oz6Phs"> </iframe>
+							<br>
+							<br>
+							<b class="ff-poppins">Halo 5</b>
+							<iframe src="https://www.youtube.com/embed/Rh_NXwqFvHc"> </iframe>
+							<br>
+							<br>
+							<b class="ff-poppins">Skyrim</b>
+							<iframe src="https://www.youtube.com/embed/JSRtYpNRoN0"> </iframe>
+							<br>
+							<br>
+							<b class="ff-poppins">Overwatch</b>
+							<iframe src="https://www.youtube.com/embed/oSbhjlJ_Ou4"> </iframe>
+							<br>
+						</div>
+					</center>
+				</div>	
+			</div>
+		</div>
+		<!-- Fin Body -->
+		
+		<!-- Footer Inicio -->
+		<div class="container  body">
+			<div class="row footer">
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 ff-lato">
+					Powerplay &copy; 2017<br>Carlos Julio Iglesias Monsalve<br>Pedro Alejandro Rodriguez Orellana<br>Raquel Jeleitza Escalante Salazar<br>Satoru Diaz Nakada<br>Todos los derechos reservados.
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<i class="fa fa-facebook-square fa-2x pull-right" aria-hidden="true"></i>
+					<i class="fa fa-twitter-square fa-2x pull-right" aria-hidden="true"></i>
+					<i class="fa fa-instagram fa-2x pull-right" aria-hidden="true"></i>
+					<i class="fa fa-youtube-play fa-2x pull-right" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<!-- Fin Footer -->
+	</body>
+</html>
