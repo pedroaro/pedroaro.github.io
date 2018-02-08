@@ -1,0 +1,14 @@
+.barraSkills {
+  width: 100%;
+  background-color: #ddd;
+  margin-bottom: 1em;
+}
+
+.skills {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white;
+}
+
+.relleno {width: 90%; background-color: #00ADEF;}
