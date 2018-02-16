@@ -36,6 +36,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .blue {
@@ -295,10 +296,10 @@ hr {
   width: 150px;
   height: 150px;
   border: 2px solid white;
-  -webkit-border-radius: 75px;
-  border-radius: 75px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin: 0 25% 20px 20%;
 }
 .profile-image img {
   width: 100%;
@@ -336,9 +337,19 @@ h3.profile-title {
 }
 
 .social-icons {
+  text-align: center;
+  position: fixed;
   display: block;
   padding: 30px 40px;
+  bottom: 0 !important;
+  margin: 0 7% 0 7%;
 }
+@media screen and (max-height: 600px){
+  .social-icons {
+    position: relative;
+  }
+}
+
 .social-icons li {
   display: inline-block;
   margin-right: 20px;
@@ -462,6 +473,25 @@ h3.profile-title {
   color: white;
 }
 
+@media (max-width: 420px) {
+  .welcome-text h5{
+    font-size: 15px !important;
+    text-align: justify !important;
+  }
+
+  .welcome-text h2{
+    font-size: 25px !important;
+  }
+
+  .welcome-text {
+    padding: 10px;
+  }
+
+  .banner-bg {
+    padding: 100px 30px;
+  }
+}
+
 /*------ about us ------ */
 .about-image {
   overflow: hidden;
@@ -524,13 +554,14 @@ h3.profile-title {
   bottom: 0;
   padding: 30px;
 }
+
+
 .project-hover h5 {
   font-size: 16px;
   margin-bottom: 15px;
-}
-.project-hover h5 a {
   color: white;
 }
+
 .project-hover p {
   color: white;
   font-size: 13px;

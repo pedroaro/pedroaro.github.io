@@ -22,16 +22,6 @@
 }());
 
 // Place any jQuery/helper plugins in here.
-
-
-/**
- * Single Page Nav Plugin
- * Copyright (c) 2013 Chris Wojcik <hello@chriswojcik.net>
- * Dual licensed under MIT and GPL.
- * @author Chris Wojcik
- * @version 1.1.0
- */
-
 // Utility
 if (typeof Object.create !== 'function') {
     Object.create = function(obj) {
