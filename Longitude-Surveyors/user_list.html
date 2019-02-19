@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/table.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/loader.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta charset="utf-8">
+  </head>
+
+  <body>
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <!--CONTENT-->
+    <div class="wrapper">
+      <nav>
+        <div class="nav-wrapper dark-blue">
+          <a href="#" data-target="slide-out" class="sidenav-trigger btn waves-effect waves-light light-bluewaves-effect showable dark-blue-button "><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="inline-block">
+          <h2 class="inline">Users</h2>
+        </div>
+        <div class="row">
+            <div id="admin" class="col s12">
+              <div class="card material-table">
+                <div class="table-header">
+                  <span class="table-title"></span>
+                  <div class="actions">
+                    <a href="#" class="search-toggle waves-effect btn-flat nopadding"><i class="material-icons">search</i></a>
+                  </div>
+                </div>
+                <table id="datatable">
+                  <thead>
+                    <tr>
+                      <th>Username</th>
+                      <th>Name</th>
+                      <th>Lastname</th>
+                      <th>Role</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class='clickable-row' data-href="user_preview.html">
+                      <td>angelicaR</td>
+                      <td>Angelica</td>
+                      <td>Ramos</td>
+                      <td>Project Manager</td>
+                    </tr>
+                    <tr class='clickable-row' data-href="user_preview.html">
+                      <td>pedroR</td>
+                      <td>Pedro</td>
+                      <td>Rodriguez</td>
+                      <td>Admin</td>
+                    </tr>
+                    <tr class='clickable-row' data-href="user_preview.html">
+                      <td>claudiaC</td>
+                      <td>Claudia</td>
+                      <td>Cooper</td>
+                      <td>Accounting</td>
+                    </tr>
+                    <tr class='clickable-row' data-href="user_preview.html">
+                      <td>angelicaR</td>
+                      <td>Angelica</td>
+                      <td>Ramos</td>
+                      <td>Project Manager</td>
+                    </tr>
+                    <tr class='clickable-row' data-href="user_preview.html">
+                      <td>pedroR</td>
+                      <td>Pedro</td>
+                      <td>Rodriguez</td>
+                      <td>Admin</td>
+                    </tr>
+                    <tr class='clickable-row' data-href="user_preview.html">
+                      <td>claudiaC</td>
+                      <td>Claudia</td>
+                      <td>Cooper</td>
+                      <td>Accounting</td>
+                    </tr>
+                    <tr class='clickable-row' data-href="user_preview.html">
+                      <td>angelicaR</td>
+                      <td>Angelica</td>
+                      <td>Ramos</td>
+                      <td>Project Manager</td>
+                    </tr>
+                    <tr class='clickable-row' data-href="user_preview.html">
+                      <td>pedroR</td>
+                      <td>Pedro</td>
+                      <td>Rodriguez</td>
+                      <td>Admin</td>
+                    </tr>
+                    <tr class='clickable-row' data-href="user_preview.html">
+                      <td>claudiaC</td>
+                      <td>Claudia</td>
+                      <td>Cooper</td>
+                      <td>Accounting</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!--\CONTENT-->
+    <!--SIDENAV-->
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="images/office2.jpg">
+        </div>
+        <div class="subheader-img"><img src="images/logo.png"></div>
+      </div></li>
+      <li>
+        <a class='dropdown-trigger btn grey lighten-5 black-text text-darken-2 no-uppercase' href='#' data-target='dropdown1'><i class="material-icons">expand_more</i>Pedro Rodríguez</a>
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a><i class="material-icons">close</i>close</a></li>
+            <li><a href="settings.html"><i class="material-icons">settings</i>Settings</a></li>
+            <li><a href="login.html"><i class="material-icons">input</i>Logout</a></li>
+        </ul>
+      </li>
+      <li><a href="dashboards.html"><i class="material-icons">looks</i>Dashboard</a></li>
+      <li><a href="client_list.html"><i class="material-icons">group</i>Clients</a></li>
+      <li><a href="project_list.html"><i class="material-icons">business_center</i>Projects</a></li>
+      <li><a href=""><i class="material-icons">people_outline</i>Employees</a></li>
+      <li><a href="timesheet.html"><i class="material-icons">today</i>Timesheet</a></li>
+      <li class="active"><a href="#!"><i class="material-icons">assignment_ind</i>Users</a></li>
+      <li><a href="tasks.html"><i class="material-icons">today</i>Tasks</a></li>
+
+      <li><div class="divider"></div></li>
+      <li><div class="user-view"></div></li>
+      <li><a class="subheader">Longitude Surveyors</a></li>
+    </ul> 
+    <!--\SIDENAV-->  
+    <!--FIXED BUTTON-->            
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large light-blue" href="user_edit.html">
+        <i class="large material-icons">add</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating green"><i class="material-icons">get_app</i></a>
+          <a href="#" class="btn-floating mobile-fab-tip">Export to CSV</a>
+        </li>
+      </ul>
+    </div>
+    <!--\FIXED BUTTON-->            
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/scripts1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+
+
+  </body>
+</html>

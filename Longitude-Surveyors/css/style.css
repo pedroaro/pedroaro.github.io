@@ -1,0 +1,201 @@
+header, main, footer, .wrapper {
+  padding-left: 300px;
+}
+
+.showable {
+  display: none !important;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer, .wrapper {
+    padding-left: 0;
+  }
+
+  .showable {
+    display: block !important;
+  }
+}
+
+.subheader-img img{
+  margin-top: 10px;
+  height: auto;
+  width: 190px;
+}
+
+.background {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.background img {
+  -webkit-filter: blur(25px);
+  -moz-filter: blur(25px);
+  -o-filter: blur(25px);
+  -ms-filter: blur(25px);
+  filter: blur(25px);
+}
+
+.card_250 {
+  width: 250px;
+}
+
+.card_220 {
+  height: 230px !important;
+}
+
+.no-uppercase {
+  text-transform: none;
+}
+
+.container {
+  width: 90%;
+}
+
+.clickable-row{
+  cursor: pointer;
+}
+
+.light-blue {
+  background-color: #3eb3bf !important;
+}
+
+.dark-blue {
+  background-color: #006e8d !important;
+}
+
+.inline {
+  display:inline !important;
+}
+
+.inline-block {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-change {
+  float: right;
+  align-content: flex-end;
+}
+
+.info-box {
+  background-color: #f5f5f5  ;
+  padding: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+
+}
+
+.attributes { font-weight: bold; }
+
+
+.modal-delete {
+  width: 400px;
+}
+
+.modal-add {
+  width: 500px;
+  height: 300px;
+}
+
+.modal-add-staff {
+  width: 500px;
+  height: 600px;
+}
+
+.modal-add-hours {
+  width: 90%;
+  height: 70%;
+}
+
+.mobile-fab-tip {
+  position: fixed;
+  right: 85px;
+  padding:0px 0.5rem;
+  text-align: right;
+  background-color: #323232;
+  border-radius: 2px;
+  color: #FFF;
+  width:auto;
+}
+
+td .input-field{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.datepicker-date-display, .month-prev:active, .month-next:active,.datepicker-table td.is-selected, .pagination li.active{
+  background-color:#3eb3bf  !important;
+}
+
+.datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done,
+.input-field .prefix.active  {
+  color:#3eb3bf  !important; 
+}
+
+.sidenav .user-view{
+  padding: 0 36px 0 36px;
+  line-height: 28px;
+}
+
+.dark-blue-button,.dark-blue-button:hover{
+  background-color: #227093
+}
+
+.card .card-image{
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .card-title{
+  width: inherit;
+}
+
+.img-preview {
+  width: 100%;
+  height: auto;
+}
+
+.card-img-preview{
+  line-height: 0 !important;
+  overflow: hidden;
+}
+
+.light-gray-text{
+  color:#616161;
+}
+
+/*Cover image in cards*/
+.center-cropped {
+  object-fit: cover;  object-position: center; /* Center the image within the element */
+  height: 250px;
+  width: auto;
+}
+
+/*Cover image in cards*/
+img.right.circle {
+  object-fit: cover;  object-position: center; /* Center the image within the element */
+  height: 40px;
+  width: 40px;
+}
+
+.margin-bottom-xs{
+  margin-bottom: 10px !important;
+}
+
+.input-field div.error {
+  position: relative;
+  top: -1rem;
+  left: 0rem;
+  font-size: 0.8rem;
+  color: #FF4081;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%)
+}
+
+.modal-footer{
+  width: 90% !important;
+}
