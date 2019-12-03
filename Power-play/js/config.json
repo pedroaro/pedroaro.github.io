@@ -1,8 +1,0 @@
-config=[{
-	"Español":{
-		"Inicio":["header.jpg","Inicio","Análisis","Populares","Consolas", "Contacto","Registrar", "Iniciar Sesión", "¿Todavia no los juegas?"]
-	},
-	"Ingles":{
-		"Inicio":["header.jpg","Home","Analysis","Popular","Consoles", "Contact","Register", "Log in", "Haven't you played these?"]
-	}
-}]

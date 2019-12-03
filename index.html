@@ -1,236 +1,799 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Pedro Rodríguez Portfolio</title>
-        <meta name="description" content="">
-        <!-- 
-    	Volton Template
-    	http://www.templatemo.com/tm-441-volton
-        -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="./img/meta.png" type="image/png" size="16x16">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
-        <link rel="stylesheet" href="css/original.css">
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Pedro's Portfolio</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    
-        <div class="responsive-header visible-xs visible-sm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="top-section">
-                            <div class="profile-image">
-                                <img src="img/pedrito.png" alt="Pedro">
-                            </div>
-                            <div class="profile-content">
-                                <h3 class="profile-title">Pedro Alejandro Rodríguez Orellana</h3>
-                                <p class="profile-description">Full Stack Web Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
-                <div class="main-navigation responsive-menu">
-                    <ul class="navigation">
-                        <li><a href="#top"><i class="fa fa-globe"></i>Welcome</a></li>
-                        <li><a href="#about"><i class="fa fa-star"></i>About Me</a></li>
-                        <li><a href="#CV"><i class="fa fa-file"></i>Curriculum</a></li>
-                        <li><a href="#projects"><i class="fa fa-folder-open"></i>My Portfolio</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!-- SIDEBAR -->
-        <div class="sidebar-menu hidden-xs hidden-sm" style="overflow: auto;">
-            <div class="top-section">
-                <div class="profile-image">
-                    <img src="img/pedrito.png" alt="Pedro">
-                </div>
-                <h3 class="profile-title">Pedro Alejandro Rodríguez Orellana</h3>
-                <p class="profile-description">Full Stack Web Developer</p>
-            </div> <!-- top-section -->
-            <div class="main-navigation">
-                <ul class="navigation">
-                    <li><a href="#top"><i class="fa fa-globe"></i>Welcome</a></li>
-                    <li><a href="#about"><i class="fa fa-star"></i>About Me</a></li>
-                    <li><a href="#CV"><i class="fa fa-file"></i>Curriculum</a></li>
-                    <li><a href="#projects"><i class="fa fa-folder-open"></i>My Portfolio</a></li>
-                </ul>
-            </div> <!-- .main-navigation -->
-            <div class="social-icons" style="bottom:0; ">
-                <center>
-                    <ul>
-                        <li><a href="https://ve.linkedin.com/in/pedro-orellana"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/pedroaro"><i class="fa fa-github"></i></a></li>
-                        <li><a href="https://www.instagram.com/pedroaro2/"><i class="fa fa-instagram"></i></a></li>
-                    </ul>
-                </center>
-            </div> <!-- .social-icons -->
-        </div> <!-- .sidebar-menu -->
-        <div class="banner-bg" id="top">
-            <div class="welcome-text">
-                <h2 class="center">My Personal Portfolio</h2>
-                <h5 class="center">Hello! Welcome to my personal portfolio, here you can find all my Front End projects, my professional skills, my education, personal life and my social media. Feel free to ask! </h5>
-            </div>
-        </div>
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
 
-        <!-- MAIN CONTENT -->
-        <div class="main-content">
-            <div class="fluid-container">
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
 
-                <div class="content-wrapper">
-                
-                    <!-- ABOUT -->
-                    <div class="page-section" id="about">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h4 class="widget-title">Learn About Me</h4>
-                                <div class="about-image">
-                                    <img src="img/aula1.jpg" alt="about me">
-                                </div>
-                                <p>I'm currently studying 8th semester of <b>Computer Science</b> in the Central University of Venezuela in Caracas, Venezuela. It is widely held by the highest ranking institution in the country, and it also ranks 18th in Latin America.</p>
-                                <br> <p>I got many skills, in web programming my bests are:</p><br>
-                                <p>HTML</p>
-                                <div class="barraSkills">
-                                    <div class="skills relleno" id="barraHTML" value="100" style="width: 100%" >100%</div>
-                                </div>
-                                <p>CSS</p>
-                                <div class="barraSkills">
-                                    <div class="skills relleno" id="barraCSS" value="100" style="width: 100%">100%</div>
-                                </div>
-                                <p>JavaScript</p>
-                                <div class="barraSkills">
-                                    <div class="skills relleno" id="barraJS" value="90" style="width: 90%">90%</div>
-                                </div>
-                                <p>Ruby on Rails</p>
-                                <div class="barraSkills">
-                                    <div class="skills relleno" id="barraPHP" value="75" style="width: 75%">75%</div>
-                                </div>
-                                <p>Python</p>
-                                <div class="barraSkills">
-                                    <div class="skills relleno" id="barraPy" value="60" style="width: 60%">60%</div>
-                                </div>
-                                <hr>
-                            </div>
-                        </div> <!-- #about -->
-                    </div>
-                    <!-- ABOUT -->
-                    <div class="page-section" id="CV">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h4 class="widget-title">HERE IS MY CURRICULUM</h4>
-                                    <div class="row projects-holder">
-                                        <div class="col-md-4 col-sm-6">
-                                            <a href="./pdf/PedroRodriguez_CV_2018_EN.pdf" target="_blank">
-                                                <div class="project-item">
-                                                    <img src="img/EN_CV.jpg" alt="CV_EN">
-                                                    <div class="project-hover">
-                                                        <div class="inside">
-                                                            <h5>English</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6">
-                                            <a href="./pdf/PedroRodriguez_CV_2018.pdf" target="_blank">
-                                                <div class="project-item">
-                                                    <img src="img/ES_CV.jpg" alt="CV_SP">
-                                                    <div class="project-hover">
-                                                        <div class="inside">
-                                                            <h5>Spanish</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                </div>
-                            </div> <!-- #about -->
-                        </div>
-                    
-                    <!-- PROJECTS -->
-                    <div class="page-section" id="projects">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">THESE ARE MY PROJECTS</h4>
-                            <p>In the meanwhile of my career I've done mutiple Front End and Back End projects. I'll show you a few of the Front End ones, that's how you can see my web skills.</p>
-                            <p>Because after all, you can't say anything without see.</p>
-                        </div>
-                    </div>
-                    <div class="row projects-holder">
-                        <div class="col-md-4 col-sm-6">
-                            <a href="./red-parATI/login.html"  target="_blank">
-                                <div class="project-item">
-                                    <img src="img/preview.png" alt="red-parATI">
-                                    <div class="project-hover">
-                                        <div class="inside">
-                                            <h5>Red-ParATI</h5>
-                                            <p>Internet Technologic Application's project in 2017-2018. UCV</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <a href="./EnsenanzaWebPage/index.html"  target="_blank">
-                                <div class="project-item">
-                                    <img src="img/ensenanza-preview.jpg" alt="enseñanza">
-                                    <div class="project-hover">
-                                        <div class="inside">
-                                            <h5>Asisted Teaching</h5>
-                                            <p>Asisted Teaching Application's project in 2018. UCV</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <a href="./Longitude-Surveyors/login.html"  target="_blank">
-                                <div class="project-item">
-                                    <img src="img/longitude_preview.jpeg" alt="">
-                                    <div class="project-hover">
-                                        <div class="inside">
-                                            <h5>Longitude-Surveyors</h5>
-                                            <p>Web Application for Administration of Construction Projects 2019</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div> <!-- .projects-holder -->
-                    </div>
-                    <hr>
-                    <div class="row" id="footer">
-                        <div class="col-md-12 text-center">
-                            <p class="copyright-text">Copyright &copy; 2018 <a href="https://github.com/pedroaro" target="_blank"> Pedro Alejandro Rodríguez Orellana</a></p>
-                        </div>
-                    </div>
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
 
-                </div>
+</head>
 
-            </div>
-        </div>
+<body id="top">
 
-        <script src="js/vendor/jquery-1.10.2.min.js"></script>
-        <script src="js/min/plugins.min.js"></script>
-        <script src="js/min/main.min.js"></script>
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
 
-    </body>
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+	   		<div class="logo">
+		         <a href="index.html">PEDRO</a>
+		      </div>		      
+
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
+
+   	<div class="intro-overlay"></div>	
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			<h5>Hello, World.</h5>
+	   			<h1>I'm Pedro Rodríguez.</h1>
+
+	   			<p class="intro-position">
+	   				<span>Full Stack Web Developer</span>
+	   				<span>Mobile App Developer</span> 
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+		<li><a href="https://github.com/pedroaro" target="_blank">
+			<i class="fa fa-github-square"></i></a>
+		</li>
+		<li><a href="https://www.linkedin.com/in/pedro-orellana/" target="_blank">
+			<i class="fa fa-linkedin-square"></i></a>
+		</li>
+		<li><a href="https://www.instagram.com/pedroaro2/" target="_blank">
+			<i class="fa fa-instagram"></i></a>
+		</li>
+    </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/profile-pic.jpg" alt="Profile Picture">
+
+   				<p class="lead">I'm a experienced computer scientist graduate, Full-Stack Web Developer and Teaching assistant with a demonstrated history of working in the higher education industry. Skilled in JavaScript, HTML5, Ruby on Rails, Mysql, React Native and Linux area.</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>I consider myself as a great guy, determinated to achieve each goal that I set, and always dedicated to reach the excellence.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Pedro Alejandro Rodríguez Orellana</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>February 2, 1998</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Freelancer, Full Stack Web Developer</span>
+   				</li>
+   				<li>
+   					<strong>Website:</strong>
+   					<span>pedroaro.github.io</span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>pedroaro123@gmail.com</span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			<p>I can manage many programming skills, of course more one than others:</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent100"><span>100%</span></div>
+				   	<strong>HTML5</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>CSS3</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>JQuery</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>Ruby on Rails</strong>
+				   </li>
+				   <li>
+
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>NodeJS</strong>
+				   </li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+			   <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+			   <a href="./pdf/PedroRodriguez_CV_EN.pdf" title="Download CV" class="button button-primary" target="_blank">Download CV</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
+
+   			<p class="lead">I have more than three years in the professional field and more than five years of education in Computer Science.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Full Stack Web Developer</h3>
+						<p>Jun 2019 - Present</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>300 Dev</h4>
+						<p>Full-stack Developer at 300 Dev, developing applications with Ruby on Rails including front-end tools like Bootstrap, Materialize, HTML,CSS and JS. Using heroku as a deployment tool and AWS to store files.</p>
+					</div>
+
+				</div> <!-- /timeline-block -->
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Full Stack Web Developer</h3>
+	   					<p>Jan 2019 - Jun 2019</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Siscotel</h4>
+	   					<p>I worked as a full stack web developer on a project management application called PMLS. I use many knowledges as RoR, PostgreSQL, Amazon Web Services using buckets and lambda functions. And deploying the product with Heroku.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Full Stack Web Developer</h3>
+	   					<p>Jan 2017 - Apr 2019</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Universidad Central de Venezuela</h4>
+	   					<p>Part-time teaching assistant, within the ICARO laboratory facilities, developing the FORMINST project for the science faculty, UCV, which is developed in Ruby on Rails.<br>For this we use knowledges of Ruby, mysql, Rails, HTML, javaScript, Model Vista Controller.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Mobile Application Developer</h3>
+	   					<p>Feb 2018 - Mar 2019</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>The Chain</h4>
+	   					<p>I developed web apps using node.js, sails as framework, and mobile app development using react native. </p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelor Degree</h3>
+	   					<p>November 2014 - June 2019</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Universidad Central de Venezuela</h4>
+	   					<p>I studied Computer Science in one of the best universities in my country. Here is where I found out that I love pogramming.<br> I was the First student in score rank from my promotion.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+	</div> <!-- /resume-timeline -->
+	<div class="row resume-timeline">
+
+		<div class="col-twelve resume-header">
+
+			<h2>Certifications</h2>
+
+		</div> <!-- /resume-header -->
+
+		<div class="col-twelve">
+
+			<div class="timeline-wrap">
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-certificate"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>English Business Communication</h3>
+						<p>2016 - 2017</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>University of Washington, Seattle on Coursera</h4>
+						<p>This Specialization taught me to communicate effectively in English in professional contexts. I expanded my English vocabulary, improved my ability to write and speak in English in both social and professional interactions, and learned terminology and skills in business negotiations, telephone conversations, written reports and emails, and professional presentations.</p>
+					</div>
+
+				</div> <!-- /timeline-block -->
+
+			</div> <!-- /timeline-wrap -->   	
+			
+			<div class="timeline-wrap">
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-certificate"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Ruby on Rails:<br> An Introduction</h3>
+						<p>2017</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Johns Hopkins University, Maryland on Coursera</h4>
+						<p>This course taught me the basics skills required to create a ruby on rails application. I enrolled when creating my very first application.</p>
+					</div>
+
+				</div> <!-- /timeline-block -->
+
+			</div> <!-- /timeline-wrap -->   			
+
+		</div> <!-- /col-twelve -->
+		
+	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portfolio</h5>
+   			<h1>Check Out Some of My Works.</h1>
+
+   			<p class="lead">In my three years of software development I've created many projects in many areas, front-end, mobile, full stack projects.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+				<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="images/300dev_landing.png" alt="Liberty">
+						<a href="#modal-01" class="overlay">	                  	           
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">300Dev - Landing Page</h3>	     					    
+										<span class="folio-types">
+										Full-Stak Web Development / Web Design
+									</span>
+								</div>	                      	
+							</div>                    
+						</a>
+					</div>	               
+				</div> <!-- /folio-item -->
+
+				<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="images/EDDP.png" alt="Shutterbug">
+						<a href="#modal-02" class="overlay">              		                  
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">El Diario de Productividad</h3>	     					    
+									<span class="folio-types">
+										Full-Stack Web Development
+									</span>		     		
+								</div> 	                      	
+							</div>                    
+						</a>
+					</div>
+				</div> <!-- /folio-item -->
+
+				<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="images/300dev_plarform.png" alt="Liberty">
+						<a href="#modal-03" class="overlay">	                  	           
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">300Dev - Platform</h3>	     					    
+										<span class="folio-types">
+										Full-Stak Web Development / Web Design
+									</span>
+								</div>	                      	
+							</div>                    
+						</a>
+					</div>	               
+				</div> <!-- /folio-item -->
+					
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/longitude.jpeg" alt="Liberty">
+	                  <a href="#modal-04" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+								<h3 class="folio-title">Project Management Longitude Surveyors</h3>	     					    
+									<span class="folio-types">
+									Full-Stak Web Development / Web Design
+								</span>
+							</div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+				</div> <!-- /folio-item -->
+				
+				<div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="images/surgflow.png" alt="Liberty">
+						<a href="#modal-07" class="overlay">	                  	           
+							<div class="folio-item-table">
+								<div class="folio-item-cell">
+									<h3 class="folio-title">Surgflow App</h3>	     					    
+										<span class="folio-types">
+										Full-Stak Mobile Development
+									</span>
+								</div>	                      	
+							</div>                    
+						</a>
+					</div>	               
+					</div> <!-- /folio-item -->
+
+	        	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/red-parati-preview.png" alt="Shutterbug">
+	               	<a href="#modal-05" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Red ParATI</h3>	     					    
+								<span class="folio-types">
+									Front-End Project / Web Design 
+								</span>		     		
+							</div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        	</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/ensenanza-preview.jpg"alt="Clouds">
+	                  <a href="#modal-06" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Asisted Teaching</h3>	     					    
+								<span class="folio-types">
+									Front-End Project / Web Design
+								</span>		     		
+							</div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        	</div> <!-- /folio-item -->
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/300dev_fullpage_cropped.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>300Dev - Landing Page</h4>		      
+					      <p>I created a landing page concept for 300Dev company, which is a software development company, here you can apply to jobs, get estimations, see portfolio and know better about the company.</p>
+
+					      <div class="categories">Full-Stak Web Development / Web Design</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.300dev.com">See Website</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/eddp_cropped.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>El Diario de Productividad</h4>		      
+					      <p>Landing page of a diary that measures and improves user productivity with tips and a stopwatch system.</p>
+
+					      <div class="categories">Full-Stak Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.eldiariodeproductividad.com">See Website</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/300dev-platform-cropped.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>300Dev - Platform</h4>		      
+					      <p>300Dev have a private platform where all members are enrolled in. Here the developers can verify their skills, the projects can be managed and multiple other functionalities.</p>
+
+					      <div class="categories">Full-Stak Web Development / Web Design</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.300dev.com/login">See Online</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/pmls-platform.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Project Management Longitude Surveyors</h4>		      
+					      <p>Web Application for Administration of Construction Projects in Florida.
+
+						  </p>
+
+					      <div class="categories">Full-Stak Web Development / Web Design</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://pedroaro.github.io/Longitude-Surveyors/login.html">See Front-End</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/red-parati-preview.png" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Red ParATI</h4>		      
+					      <p>Red ParATI was a project to develop in Web Development Course in my career, I was on charge to create the front-end on this project</p>
+
+					      <div class="categories">Front-End Project / Web Design</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://pedroaro.github.io/red-parATI/login.html">See Online</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/ensenanza-preview.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Asisted Teaching</h4>		      
+					      <p>This site was created to teach people about lastest technologies, it contains many quizes to prove the knowledges retained.</p>
+
+					      <div class="categories">Front-End Project / Web Design</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://pedroaro.github.io/ensenanza_asistida/index.html">See Online</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-06 -->
+
+				   <div id="modal-07" class="popup-modal slider mfp-hide">	
+
+						<div class="media">
+							<img src="images/surgflow.png" alt="" />
+						</div>      	
+
+					  <div class="description-box">
+						 <h4>Surgflow App</h4>		      
+						 <p>Mobile application dedicated to clinics in the US, this app tries to reduce the unused time inside emergency rooms in clinics. This app was not published by the customer. </p>
+
+						 <div class="categories">Full-Stak Mobile Development</div>			               
+					  </div>
+
+					<div class="link-box">
+						 <a href="#" class="popup-modal-dismiss">Close</a>
+					</div>		      
+
+				  </div> <!-- /modal-06 -->
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Contact</h5>
+				<h1>I'd Love To Hear From You.</h1>
+				
+			</div> 
+		</div> <!-- /section-intro -->
+
+
+		<div class="row contact-info">
+
+			<div class="col-four tab-full">
+
+				<div class="icon">
+					<i class="icon-pin"></i>
+				</div>
+
+				<h5>Where to find me</h5>
+
+				<p>
+				Impact Hub Caracas<br>
+				Altamira, Caracas<br>
+				Venezuela
+				</p>
+
+			</div>
+
+			<div class="col-four tab-full collapse">
+
+				<div class="icon">
+					<i class="icon-mail"></i>
+				</div>
+
+				<h5>Email Me At</h5>
+
+				<p>pedroaro123@gmail.com</p>
+
+			</div>
+
+			<div class="col-four tab-full">
+
+				<div class="icon">
+					<i class="icon-phone"></i>
+				</div>
+
+				<h5>Message Me At</h5>
+
+				<p>Phone:<br> (+58) 426 6313617 (Whatsapp)</p>
+
+			</div>
+			
+		</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+					<ul class="footer-social">        
+						<li><a href="https://github.com/pedroaro" target="_blank">
+							<i class="fa fa-github-square"></i></a>
+						</li>
+						<li><a href="https://www.linkedin.com/in/pedro-orellana/" target="_blank">
+							<i class="fa fa-linkedin-square"></i></a>
+						</li>
+						<li><a href="https://www.instagram.com/pedroaro2/" target="_blank">
+							<i class="fa fa-instagram"></i></a>
+						</li>
+					</ul> <!-- /intro-social --> 
+	      		
+	      </div>
+
+      	<div class="col-eight tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright 2019 </span> 
+		        	<span>Created by <a href="https://www.linkedin.com/in/pedro-orellana/">Pedro Rodríguez</a></span> 
+		         </div>		                  
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
 </html>
